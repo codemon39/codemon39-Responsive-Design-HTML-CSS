@@ -126,7 +126,7 @@ img {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  margin-top: 7.5rem;
+  margin-top: 5rem;
   display: grid;
 }
 .highlights_stats-item {
@@ -152,7 +152,7 @@ img {
 
 .home_resources-component {
   z-index: 1;
-  margin-top: 10rem;
+  margin-top: 6rem;
   position: relative;
 }
 .resources_heading-wrapper {
@@ -301,8 +301,8 @@ img {
   padding-bottom: 5rem;
 }
 .padding-global {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .footer_wrapper {
@@ -379,7 +379,7 @@ img {
   background-color: #333;
   width: 100%;
   height: 1px;
-  margin: 4% 0px 2% 0px;
+  margin: 10% 0px 2% 0px;
 }
 .footer_bottom-wrapper {
   justify-content: space-between;
@@ -431,7 +431,8 @@ img {
 
 .section_home-faq {
   position: relative;
-  height: 38rem;
+  /* margin-bottom: 40%; */
+  height: 40rem;
 }
 .offsetfix {
   pointer-events: none;
@@ -477,6 +478,7 @@ main {
 }
 .games_faq_list-grid {
   border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   grid-template-rows: auto;
   grid-template-columns: 100%;
   grid-auto-columns: 100%;
@@ -492,7 +494,7 @@ main {
   cursor: pointer;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 0;
+  padding: 0.8rem 0;
   font-weight: 600;
   display: flex;
 }
@@ -519,10 +521,6 @@ main {
 
 .padding-xxlarge {
   padding: 5rem;
-}
-.games_cta_padding {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .games_cta_container {
   background-color: #f5f5f5;
@@ -889,7 +887,6 @@ main {
   display: flex;
   background-color: white;
   cursor: pointer;
-  text-decoration: none;
 }
 .section_games_p2p {
   z-index: 1;
@@ -977,7 +974,6 @@ main {
 }
 .games_p2p_content {
   text-align: left;
-  padding: 1rem;
 }
 .games_p2p_image-wrapper {
   border-radius: 0.5rem;
@@ -1064,6 +1060,28 @@ main {
   background-clip: text;
 }
 @media screen and (max-width: 992px) {
+  .footer_line-divider {
+    background-color: #333;
+    width: 100%;
+    height: 1px;
+    margin: 20% 0px 2% 0px;
+  }
+  .games_cta_container {
+    background-color: #f5f5f5;
+    background-image: url(./images/669a62a…_image%2032.avif);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    position: relative;
+  }
+  .load-more:hover {
+    cursor: pointer;
+  }
   .resources_grid {
     flex-wrap: wrap;
     display: block;
@@ -1099,6 +1117,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .footer_credit-wrapper {
+    padding-top: 5%;
+  }
   .text-color-gradient.hide-desktop {
     display: inline;
   }
@@ -1117,10 +1138,10 @@ main {
     max-width: 50%;
   }
   .highlights_section_handwritten {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   .highlights_heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .games_testimonials_heading-wrrapper {
     flex-flow: column;
@@ -1196,8 +1217,8 @@ main {
   }
   .row {
     flex-flow: column !important;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     margin-left: 0px;
   }
