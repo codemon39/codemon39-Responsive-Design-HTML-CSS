@@ -108,7 +108,7 @@
                 display: none;
                 font-size: 50px;
                 margin-top: 20px;
-                margin-left: 20px;
+                margin-left: 10px;
               "
               class="aaa"
               id="double"
@@ -122,11 +122,51 @@
       <div class="navbartop-content2">
         <div class="nav-right-part2">
           <ul class="nav-links2">
-            <li><a class="nav-link" href="#games">Games</a></li>
-            <li><a class="nav-link" href="#contests">Contests</a></li>
-            <li><a class="nav-link" href="#availability">Availability</a></li>
-            <li><a class="nav-link" href="#reviews">Reviews</a></li>
-            <li><a class="nav-link" href="#faqs">FAQs</a></li>
+            <li>
+              <a
+                onclick="{navclick1()}"
+                id="gamesnav"
+                class="nav-link"
+                href="#games"
+                >Games</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="{navclick2()}"
+                id="contestnav"
+                class="nav-link"
+                href="#contests"
+                >Contests</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="{navclick3()}"
+                id="avaanav"
+                class="nav-link"
+                href="#availability"
+                >Availability</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="{navclick4()}"
+                id="reviewsnav"
+                class="nav-link"
+                href="#reviews"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="{navclick5()}"
+                id="faqsnav"
+                class="nav-link"
+                href="#faqs"
+                >FAQs</a
+              >
+            </li>
           </ul>
           <div></div>
         </div>
@@ -146,11 +186,13 @@
                 class="home_hero_text-wrapper"
               >
                 <h1 class="home_hero-heading">
-                  <span class="hero_heading-handwritten text-color-gradient"
+                  <span
+                    class="hero_heading-handwritten text-color-gradient tototo"
                     >Play</span
                   >
                   big Contests &amp; win big
-                  <span class="hero_heading-handwritten text-color-gradient"
+                  <span
+                    class="hero_heading-handwritten text-color-gradient tototo"
                     >money</span
                   >
                 </h1>
@@ -359,169 +401,206 @@
       <div id="games" class="introduce">
         <div class="padding-global padding-section-large">
           <div class="container-large">
-            <div class="home_games-component">
+            <div>
               <img
                 src="https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/669900654b513934b1b2975f_Arrow%202.svg"
+                loading="lazy"
                 alt=""
                 class="games_highlights_arrow"
+                data-nsfw-filter-status="sfw"
                 style="visibility: visible"
               />
-              <div class="games_section_heading-wrapper">
+              <div class="introduce_title">
                 <p class="introduce_title_introduce">INTRODUCING</p>
                 <h2 class="introduce_title_ourgames">OUR GAMES</h2>
                 <p class="introduce_title_play">PLAY TODAY</p>
                 <div class="padding-bottom padding-large"></div>
               </div>
-              <div class="home_games-tabs w-tabs">
-                <div class="games_tabs-menu w-tab-menu" role="tablist">
-                  <a
-                    data-w-tab="Tab 1"
-                    class="games_tab-link w-inline-block w-tab-link w--current"
-                    id="w-tabs-0-data-w-tab-0"
-                    href="https://splashsports.com/#w-tabs-0-data-w-pane-0"
-                    role="tab"
-                    aria-controls="w-tabs-0-data-w-pane-0"
-                    aria-selected="true"
-                    ><div class="games_tabs_logo-wrapper">
-                      <div class="games_tabs-title is-active">
-                        SURVIVOR<span
-                          class="games_tabs-gradient text-color-gradient"
-                          >'24</span
-                        >
-                      </div>
-                      <!-- <div class="games_tabs-title">
+            </div>
+          </div>
+          <div class="introduce_content">
+            <div class="introduce_content_title">
+              <div class="games_tabs-menu w-tab-menu" role="tablist">
+                <a
+                  data-w-tab="Tab 1"
+                  class="games_tab-link w-inline-block w-tab-link w--current"
+                  id="w-tabs-0-data-w-tab-0"
+                  href="https://splashsports.com/#w-tabs-0-data-w-pane-0"
+                  role="tab"
+                  aria-controls="w-tabs-0-data-w-pane-0"
+                  aria-selected="true"
+                  ><div class="bottom_line games_tabs_logo-wrapper">
+                    <div class="games_tabs-title is-active">
+                      SURVIVOR<span
+                        class="games_tabs-gradient twentyfour text-color-gradient"
+                        >'24</span
+                      >
+                    </div>
+                    <!-- <div class="games_tabs-title">
                 SURVIVOR<span class="games_tabs-gssasradient">'24</span>
               </div> -->
-                    </div></a
-                  ><a
-                    data-w-tab="Tab 2"
-                    class="games_tab-link w-inline-block w-tab-link"
-                    tabindex="-1"
-                    id="w-tabs-0-data-w-tab-1"
-                    href="https://splashsports.com/#w-tabs-0-data-w-pane-1"
-                    role="tab"
-                    aria-controls="w-tabs-0-data-w-pane-1"
-                    aria-selected="false"
-                    ><div class="games_tabs_logo-wrapper">
-                      <!-- <div class="games_tabs-title is-active">
+                  </div></a
+                ><a
+                  data-w-tab="Tab 2"
+                  class="games_tab-link w-inline-block w-tab-link"
+                  tabindex="-1"
+                  id="w-tabs-0-data-w-tab-1"
+                  href="https://splashsports.com/#w-tabs-0-data-w-pane-1"
+                  role="tab"
+                  aria-controls="w-tabs-0-data-w-pane-1"
+                  aria-selected="false"
+                  ><div class="games_tabs_logo-wrapper">
+                    <!-- <div class="games_tabs-title is-active">
                       PICK'EM<span
                         class="games_tabs-gradient text-color-gradient"
                         >'24</span
                       >
                     </div> -->
-                      <div class="games_tabs-title">
-                        PICK'EM<span class="games_tabs-gradient">'24</span>
-                      </div>
-                    </div></a
-                  ><a
-                    data-w-tab="Tab 3"
-                    class="games_tab-link w-inline-block w-tab-link"
-                    tabindex="-1"
-                    id="w-tabs-0-data-w-tab-2"
-                    href="https://splashsports.com/#w-tabs-0-data-w-pane-2"
-                    role="tab"
-                    aria-controls="w-tabs-0-data-w-pane-2"
-                    aria-selected="false"
-                    ><div class="games_tabs_logo-wrapper">
-                      <!-- <div class="games_tabs-title is-active">
+                    <div class="games_tabs-title">
+                      PICK'EM<span class="games_tabs-gradient">'24</span>
+                    </div>
+                  </div></a
+                ><a
+                  data-w-tab="Tab 3"
+                  class="games_tab-link w-inline-block w-tab-link"
+                  tabindex="-1"
+                  id="w-tabs-0-data-w-tab-2"
+                  href="https://splashsports.com/#w-tabs-0-data-w-pane-2"
+                  role="tab"
+                  aria-controls="w-tabs-0-data-w-pane-2"
+                  aria-selected="false"
+                  ><div class="games_tabs_logo-wrapper">
+                    <!-- <div class="games_tabs-title is-active">
                       CONFIDENCE<span
                         class="games_tabs-gradient text-color-gradient"
                         >'24</span
                       >
                     </div> -->
-                      <div class="games_tabs-title">
-                        CONFIDENCE<span class="games_tabs-gradient">'24</span>
-                      </div>
-                    </div></a
-                  ><a
-                    data-w-tab="Tab 4"
-                    class="games_tab-link w-inline-block w-tab-link"
-                    tabindex="-1"
-                    id="w-tabs-0-data-w-tab-3"
-                    href="https://splashsports.com/#w-tabs-0-data-w-pane-3"
-                    role="tab"
-                    aria-controls="w-tabs-0-data-w-pane-3"
-                    aria-selected="false"
-                    ><div class="games_tabs_logo-wrapper">
-                      <!-- <div class="games_tabs-title is-active">
+                    <div class="games_tabs-title">
+                      CONFIDENCE<span class="games_tabs-gradient">'24</span>
+                    </div>
+                  </div></a
+                ><a
+                  data-w-tab="Tab 4"
+                  class="games_tab-link w-inline-block w-tab-link"
+                  tabindex="-1"
+                  id="w-tabs-0-data-w-tab-3"
+                  href="https://splashsports.com/#w-tabs-0-data-w-pane-3"
+                  role="tab"
+                  aria-controls="w-tabs-0-data-w-pane-3"
+                  aria-selected="false"
+                  ><div class="games_tabs_logo-wrapper">
+                    <!-- <div class="games_tabs-title is-active">
                       TIERS<span class="games_tabs-gradient text-color-gradient"
                         >'24</span
                       >
                     </div> -->
-                      <div class="games_tabs-title">
-                        TIERS<span class="games_tabs-gradient">'24</span>
-                      </div>
-                    </div></a
-                  ><a
-                    data-w-tab="Tab 5"
-                    class="games_tab-link w-inline-block w-tab-link"
-                    tabindex="-1"
-                    id="w-tabs-0-data-w-tab-4"
-                    href="https://splashsports.com/#w-tabs-0-data-w-pane-4"
-                    role="tab"
-                    aria-controls="w-tabs-0-data-w-pane-4"
-                    aria-selected="false"
-                    ><div class="games_tabs_logo-wrapper">
-                      <!-- <div class="games_tabs-title is-active">
+                    <div class="games_tabs-title">
+                      TIERS<span class="games_tabs-gradient">'24</span>
+                    </div>
+                  </div></a
+                ><a
+                  data-w-tab="Tab 5"
+                  class="games_tab-link w-inline-block w-tab-link"
+                  tabindex="-1"
+                  id="w-tabs-0-data-w-tab-4"
+                  href="https://splashsports.com/#w-tabs-0-data-w-pane-4"
+                  role="tab"
+                  aria-controls="w-tabs-0-data-w-pane-4"
+                  aria-selected="false"
+                  ><div class="games_tabs_logo-wrapper">
+                    <!-- <div class="games_tabs-title is-active">
                       ONE
                       <span class="games_heading-ampersand">&amp;</span>
                       DONE<span class="games_tabs-gradient text-color-gradient"
                         >'24</span
                       >
                     </div> -->
-                      <div class="games_tabs-title">
-                        ONE
-                        <span class="games_title-ampersand">&amp;</span>
-                        DONE<span class="games_tabs-gradient">'24</span>
-                      </div>
-                    </div></a
-                  >
-                </div>
-                <div class="games_tab_content-wrapper">
-                  <div
-                    id="w-node-_19ef9303-7bab-e937-c767-4f6c73284cff-853fa0c6"
-                    class="games_tabs_left-col"
-                  >
-                    <div class="games_tabs_text-wrapper">
-                      <h3 class="games_tabs-heading">
-                        SURVIVOR<span
-                          class="games_heading-gradient text-color-gradient"
-                          >'24</span
-                        >
-                      </h3>
-                      <p>
-                        Survive and advance. In one of the most popular formats
-                        on Splash Sports, your goal is simple: pick winners and
-                        outlast the competition.
-                      </p>
-                      <div class="margin-top margin-small">
-                        <a href="/games/survivor" class="button-white w-button"
-                          >Go to Survivor</a
-                        >
-                      </div>
+                    <div class="games_tabs-title">
+                      ONE
+                      <span class="games_title-ampersand">&amp;</span>
+                      DONE<span class="games_tabs-gradient">'24</span>
                     </div>
-                    <div class="games_tabs_mobile-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 100vw"
-                        alt="Mockup for Survivor interface"
-                        class="games_tabs-image is-survivor is-mobile"
-                        style="visibility: visible"
-                      />
-                      <div class="tabs_gradient-mobile"></div>
-                    </div>
-                  </div>
-                  <div class="games_tabs_right-col">
-                    <img
-                      src="https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif"
-                      sizes="(max-width: 767px) 100vw, (max-width: 991px) 36vw, 37vw"
-                      alt="Mockup for Survivor interface"
-                      class="games_tabs-image is-survivor"
-                      style="visibility: visible"
-                    />
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="introduce_content_image">
+              <div
+                id="w-node-_19ef9303-7bab-e937-c767-4f6c73284cff-853fa0c6"
+                class="games_tabs_left-col"
+              >
+                <div class="games_tabs_text-wrapper">
+                  <h3 class="games_tabs-heading">
+                    SURVIVOR<span
+                      class="games_heading-gradient twentyfour text-color-gradient"
+                      >'24</span
+                    >
+                  </h3>
+                  <p>
+                    Survive and advance. In one of the most popular formats on
+                    Splash Sports, your goal is simple: pick winners and outlast
+                    the competition.
+                  </p>
+                  <div class="margin-top margin-small">
+                    <a class="button-white w-button">Go to Survivor</a>
                   </div>
                 </div>
               </div>
+              <div class="games_tabs_right-col">
+                <img
+                  src="https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif"
+                  loading="lazy"
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 36vw, 37vw"
+                  srcset="
+                    https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop-p-500.avif 500w,
+                    https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif       972w
+                  "
+                  alt="Mockup for Survivor interface"
+                  class="games_tabs-image is-survivor"
+                  data-nsfw-filter-status="sfw"
+                  style="visibility: visible"
+                />
+              </div>
+            </div>
+
+            <div class="introduce_content_image1">
+              <div
+                id="w-node-_19ef9303-7bab-e937-c767-4f6c73284cff-853fa0c6"
+                class="games_tabs_left-col"
+              >
+                <div class="games_tabs_text-wrapper">
+                  <img
+                    src="https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif"
+                    loading="lazy"
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 36vw, 37vw"
+                    srcset="
+                      https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop-p-500.avif 500w,
+                      https://cdn.prod.website-files.com/668fc7c69509d8791e9728d9/66d939fe306b13d295dd3205_Survivor_Desktop.avif       972w
+                    "
+                    alt="Mockup for Survivor interface"
+                    class="games_tabs-image is-survivor"
+                    data-nsfw-filter-status="sfw"
+                    style="visibility: visible"
+                  />
+                  <h3 class="games_tabs-heading">
+                    SURVIVOR<span
+                      id="specialfont"
+                      class="games_heading-gradient twentyfour text-color-gradient"
+                      >'24</span
+                    >
+                  </h3>
+                  <p>
+                    Survive and advance. In one of the most popular formats on
+                    Splash Sports, your goal is simple: pick winners and outlast
+                    the competition.
+                  </p>
+                  <div class="margin-top margin-small">
+                    <a class="button-white w-button">Go to Survivor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="games_tabs_right-col"></div>
             </div>
           </div>
         </div>
@@ -1170,7 +1249,7 @@
           </div>
         </div>
         <div class="games_testimonials_button-wrapper">
-          <a href="#" class="button-secondary load-more w-button">Load more</a>
+          <a class="button-secondary load-more w-button">Load more</a>
         </div>
       </section>
       <section class="section_games_cta">
@@ -1586,6 +1665,7 @@
         tabs[i].className = tabs[i].className.replace("tablinks", "");
       }
       document.getElementById(cityName).style.display = "block";
+      document.getElementById("navbartop").style.position = "fixed";
       evt.currentTarget.className += " tablinks";
     }
 
@@ -1611,12 +1691,14 @@
     const handleclickonn = () => {
       document.getElementById("bar").style.display = "none";
       document.getElementById("double").style.display = "flex";
+      document.getElementById("navbartop").style.position = "fixed";
     };
   </script>
   <script>
     const handleclicktwo = () => {
       document.getElementById("bar").style.display = "flex";
       document.getElementById("double").style.display = "none";
+      document.getElementById("navbartop").style.position = "fixed";
     };
   </script>
   <script>
@@ -1634,5 +1716,108 @@
         });
       });
     });
+  </script>
+  <script>
+    const navclick1 = () => {
+      document.getElementById("gamesnav").style.color = "#4bebe2";
+      document.getElementById("gamesnav").style.borderBottom =
+        "4px solid #4bebe2";
+
+      document.getElementById("contestnav").style.color = "#dbdbdc";
+      document.getElementById("contestnav").style.borderBottom =
+        "4px solid #1a1c1e ";
+
+      document.getElementById("avaanav").style.color = "#dbdbdc";
+      document.getElementById("avaanav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("reviewsnav").style.color = "#dbdbdc";
+      document.getElementById("reviewsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("faqsnav").style.color = "#dbdbdc";
+      document.getElementById("faqsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+    };
+
+    const navclick2 = () => {
+      document.getElementById("contestnav").style.color = "#4bebe2";
+      document.getElementById("contestnav").style.borderBottom =
+        "4px solid #4bebe2";
+
+      document.getElementById("gamesnav").style.color = "#dbdbdc";
+      document.getElementById("gamesnav").style.borderBottom =
+        "4px solid #1a1c1e";
+
+      document.getElementById("avaanav").style.color = "#dbdbdc";
+      document.getElementById("avaanav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("reviewsnav").style.color = "#dbdbdc";
+      document.getElementById("reviewsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("faqsnav").style.color = "#dbdbdc";
+      document.getElementById("faqsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+    };
+
+    const navclick3 = () => {
+      document.getElementById("avaanav").style.color = "#4bebe2";
+      document.getElementById("avaanav").style.borderBottom =
+        "4px solid #4bebe2";
+
+      document.getElementById("gamesnav").style.color = "#dbdbdc";
+      document.getElementById("gamesnav").style.borderBottom =
+        "4px solid #1a1c1e";
+
+      document.getElementById("contestnav").style.color = "#dbdbdc";
+      document.getElementById("contestnav").style.borderBottom =
+        "4px solid #1a1c1e ";
+      document.getElementById("reviewsnav").style.color = "#dbdbdc";
+      document.getElementById("reviewsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("faqsnav").style.color = "#dbdbdc";
+      document.getElementById("faqsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+    };
+
+    const navclick4 = () => {
+      document.getElementById("reviewsnav").style.color = "#4bebe2";
+      document.getElementById("reviewsnav").style.borderBottom =
+        "4px solid #4bebe2";
+
+      document.getElementById("gamesnav").style.color = "#dbdbdc";
+      document.getElementById("gamesnav").style.borderBottom =
+        "4px solid #1a1c1e";
+
+      document.getElementById("contestnav").style.color = "#dbdbdc";
+      document.getElementById("contestnav").style.borderBottom =
+        "4px solid #1a1c1e ";
+
+      document.getElementById("avaanav").style.color = "#dbdbdc";
+      document.getElementById("avaanav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("faqsnav").style.color = "#dbdbdc";
+      document.getElementById("faqsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+    };
+
+    const navclick5 = () => {
+      document.getElementById("faqsnav").style.color = "#4bebe2";
+      document.getElementById("faqsnav").style.borderBottom =
+        "4px solid #4bebe2";
+
+      document.getElementById("gamesnav").style.color = "#dbdbdc";
+      document.getElementById("gamesnav").style.borderBottom =
+        "4px solid #1a1c1e";
+
+      document.getElementById("contestnav").style.color = "#dbdbdc";
+      document.getElementById("contestnav").style.borderBottom =
+        "4px solid #1a1c1e ";
+
+      document.getElementById("avaanav").style.color = "#dbdbdc";
+      document.getElementById("avaanav").style.borderBottom =
+        "4px solid #1a1c1e";
+      document.getElementById("reviewsnav").style.color = "#dbdbdc";
+      document.getElementById("reviewsnav").style.borderBottom =
+        "4px solid #1a1c1e";
+    };
   </script>
 </html>
